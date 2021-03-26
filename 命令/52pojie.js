@@ -40,7 +40,7 @@ exports.handler = async function (argv) {
     })
     if (hasTasks) {
       scheduler.execTask(command, account.tasks).catch(err => console.error("52pojie签到任务:", err.message)).finally(() => {
-        console.info('当前任务执行完毕！')
+        console.info('当前任务执行毕！')
       })
     } else {
       console.info('暂无可执行任务！')
